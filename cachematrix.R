@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 cacheSolve <- function(x = matrix(), ...) {  #comparing matrix with previous one
         m <- x$getmatrix()  #this gets the inverse if it was already calculated
         if(!is.null(m)) {   #checks if cacheSolve has been run before
-                message("getting cached data") #if it has then it provides this message
+                message("getting cached data") #if it has then provides this message
                 return(m)
         }
         data <- x$get()
